@@ -1,0 +1,69 @@
+/* CSS styles for the navbar */
+.navbar {
+  background-color: #3498db; 
+  padding: 10px 0; 
+  font-family:Arial, Helvetica, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  color: #fff; 
+  text-decoration: none;
+}
+
+.navbar-brand:hover {
+  text-decoration: none;
+}
+
+.navbar-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-link {
+  margin-right: 20px;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+  
+}
+
+
+.navbar-link:hover {
+  color: #ff9900; 
+  
+}
+
+
+body {
+  margin-top: 80px; 
+}
+
+
+@media (max-width: 768px) {
+  .navbar-links {
+    flex-direction: column;
+  }
+
+  .navbar-link {
+    margin: 10px 0;
+  }
+}
